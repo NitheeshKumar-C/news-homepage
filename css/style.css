@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  background-color: hsl(36deg, 100%, 99%);
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 5% 5% 2% 5%;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.head img {
+  width: 2.6vw;
+}
+
+.container {
+  display: none;
+}
+
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu li a {
+  color: hsl(236deg, 13%, 42%);
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+.nav-menu li a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.mid-content {
+  margin: 4% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.mid-content .mid-content-div-left {
+  margin: 0 0 15px 0;
+  padding: 0 15px 0 0;
+}
+.mid-content .image-web-3-desktop {
+  max-width: 100%;
+}
+.mid-content .mid-content-intro {
+  padding: 0;
+  margin: 5% 0 0 0;
+  justify-content: space-between;
+}
+.mid-content .mid-content-intro h1 {
+  font-size: 3.6vw;
+  line-height: normal;
+  font-weight: 700;
+}
+.mid-content .mid-content-intro .mid-content-intro-right {
+  padding: 0;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mid-content .mid-content-intro .mid-content-intro-right p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 1.25vw;
+}
+.mid-content .mid-content-intro .mid-content-intro-right button {
+  text-transform: uppercase;
+  font-size: 1vw;
+  color: hsl(36deg, 100%, 99%);
+  outline: none;
+  border: none;
+  width: fit-content;
+  padding: 0.7vw 1.3vw;
+  background-color: hsl(5deg, 85%, 63%);
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.mid-content .mid-content-intro .mid-content-intro-right button:hover {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+}
+.mid-content .side-new {
+  padding: 0;
+}
+.mid-content .side-new .sub-side-new {
+  height: 100%;
+  background-color: hsl(240deg, 100%, 5%);
+  color: white;
+  padding: 5% 5%;
+}
+.mid-content .side-new h2 {
+  color: hsl(35deg, 77%, 62%);
+  font-weight: 700;
+  margin: 30px 0;
+  font-size: 2vw;
+}
+.mid-content .side-new h5 {
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+.mid-content .side-new h5 span:hover {
+  color: hsl(35deg, 77%, 62%);
+  cursor: pointer;
+}
+.mid-content .side-new hr {
+  margin: 30px 0;
+  z-index: -100;
+  border: 2px solid hsl(233deg, 8%, 79%);
+}
+.mid-content .side-new p {
+  margin-top: 15px;
+  letter-spacing: 1.5px;
+  font-size: 1vw;
+  margin-bottom: 30px;
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 400;
+}
+
+.hot-topics {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.hot-topics .hot-topics-img {
+  max-width: 7vw;
+  padding: 0 10px 0 0;
+}
+.hot-topics .ht-imgDiv {
+  max-width: fit-content;
+  text-align: center;
+}
+.hot-topics .hot-topics-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hot-topics .hot-topics-div h3 {
+  font-weight: 700;
+  color: hsl(233deg, 8%, 79%);
+  font-size: 2vw;
+}
+.hot-topics .hot-topics-div h6 {
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+.hot-topics .hot-topics-div h6 span:hover {
+  color: hsl(5deg, 85%, 63%);
+  cursor: pointer;
+}
+.hot-topics .hot-topics-div p {
+  font-size: 1vw;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+.attribution a {
+  color: hsl(236deg, 13%, 42%);
+}
+.attribution a:hover {
+  color: hsl(5deg, 85%, 63%);
+}/*# sourceMappingURL=style.css.map */

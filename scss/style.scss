@@ -1,0 +1,188 @@
+$SoftOrange: hsl(35, 77%, 62%);
+$SoftRed: hsl(5, 85%, 63%);
+
+$Off-white: hsl(36, 100%, 99%);
+$GrayishBlue: hsl(233, 8%, 79%);
+$DarkGrayishBlue: hsl(236, 13%, 42%);
+$VeryDarkBlue: hsl(240, 100%, 5%);
+
+
+
+$FontSizeParagraph: 15px;
+
+$fontWeights: ("400":400, "700":700, "800":800);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    background-color: $Off-white;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 5% 5% 2% 5%;
+}
+.head{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    img{
+        width: 2.6vw;
+    }
+    
+}
+.container{
+    display: none;
+}
+.nav-menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li a{
+        color: $DarkGrayishBlue;
+        text-decoration: none;
+        font-size: 1.3vw;
+        &:hover{
+            color: $SoftRed;
+        }
+    }
+}
+.mid-content{
+    margin: 4% 0;
+    
+    display: flex;
+    justify-content: space-between;
+    .mid-content-div-left{
+        margin: 0 0 15px 0;
+        padding: 0 15px 0 0;
+    }
+    .image-web-3-desktop{
+        max-width: 100%;
+    }
+    .mid-content-intro{
+        padding: 0;
+        margin: 5% 0 0 0;
+        justify-content: space-between;
+        h1{
+            font-size: 3.6vw;
+            line-height: normal;
+            font-weight: map-get($fontWeights, "700");
+        }
+        .mid-content-intro-right{
+            padding: 0;
+            justify-self: flex-end;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                color: $DarkGrayishBlue;
+                font-size: 1.25vw;
+            }
+            button{
+                text-transform: uppercase;
+                font-size: 1vw;
+                color: $Off-white;
+                outline: none;
+                border: none;
+                width: fit-content;
+                padding: 0.7vw 1.3vw;
+                background-color: $SoftRed;
+                font-weight: map-get($fontWeights, "700");
+                letter-spacing: 3px;
+                &:hover{
+                    background-color: $VeryDarkBlue;
+                    color: $Off-white;
+                }
+            }
+        }
+    }
+    .side-new{
+        padding: 0;
+        .sub-side-new{
+            height: 100%;
+            background-color: $VeryDarkBlue;
+            color: white;
+            padding: 5% 5%;
+        }
+        h2{
+            color: $SoftOrange;
+            font-weight: map-get($fontWeights, "700");
+            margin: 30px 0;
+            font-size: 2vw;
+        }
+        h5{
+            font-weight: map-get($fontWeights, "700" );
+            font-size: 1.5vw;
+            & span:hover{
+                color: $SoftOrange;
+                cursor: pointer;
+            }
+        }
+        hr{
+            margin: 30px 0;
+            z-index: -100;
+            border: 2px solid $GrayishBlue;
+        }
+        p{
+            margin-top: 15px;
+            letter-spacing: 1.5px;
+            font-size: 1vw;
+            margin-bottom: 30px;
+            color: $GrayishBlue;
+            font-weight: map-get($fontWeights, "400" );
+        }
+    }
+}
+.hot-topics{
+    
+    display: flex;
+    justify-content: space-evenly;
+    // flex-wrap: wrap;
+    text-align: left;
+    .hot-topics-img{
+        max-width: 7vw;
+        padding: 0 10px 0 0;
+    }
+    .ht-imgDiv{
+        max-width: fit-content;
+        text-align: center;
+    }
+    .hot-topics-div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        h3{
+            font-weight: map-get($fontWeights, "700");
+            color: $GrayishBlue;
+            font-size: 2vw;
+        }
+        h6{
+            font-weight: map-get($fontWeights, "700");
+            font-size: 1.5vw;
+            & span:hover{
+                color: $SoftRed;
+                cursor: pointer;
+            }
+        }
+        p{
+            font-size: 1vw;
+        }
+    }
+}
+.attribution{
+    font-size: 15px;
+    text-align: center;
+    margin: 2rem 0 0 0;
+    & a{
+        color: $DarkGrayishBlue;
+    }
+    & a:hover{
+        color: $SoftRed;
+    }
+}
+

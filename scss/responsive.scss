@@ -1,0 +1,183 @@
+@media only screen and (max-device-width:768px) {
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    .head{
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        padding: 5% 5% 2% 5%;
+        margin: 0;
+        top: 0;
+        img{
+            width: 9vw;
+        }
+    }
+    nav{
+        display: none;
+        z-index: 1;
+        background-color: white;
+        width:50%;
+        position: fixed;
+        right: 10px;
+        top: 40px;
+        min-height: 100vh;
+        div{
+            align-self: flex-end;
+            margin:20px 20px;
+        }
+        
+    }
+    .nav-menu{
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        ul{
+            z-index: 2;
+        }
+        li{
+            width: 100%;
+            margin: 0 0 30px 20px;
+        }
+        li a{
+            text-decoration: none;
+            font-size: 3vw;
+        }
+    }
+    
+    .mid-content{
+        padding: 70px 5% 2% 5%;
+        margin: 4% 0;
+        .mid-content-div-left{
+            padding: 0 0 15px 0;
+        }
+        .image-web-3-desktop{
+            max-width: 100%;
+        }
+        .mid-content-intro{
+            padding: 0;
+            margin: 5% 0 0 0;
+            h1{
+                font-size: 13vw;
+            }
+            .mid-content-intro-right{
+                p{
+                    font-size: 4vw;
+                }
+                button{
+                    font-size: 2.7vw;
+                    padding: 2vw 4vw;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+        .side-new{
+            .sub-side-new{
+                padding: 5% 5%;
+            }
+            h2{
+                margin: 30px 0;
+                font-size: 1.5rem;
+            }
+            h5{
+                font-size: 5vw;
+            }
+            hr{
+                margin: 30px 0;
+                z-index: 0;
+            }
+            p{
+                margin-top: 15px;
+                font-size: 3.2vw;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .hot-topics{
+        padding: 5% 5% 2% 5%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        text-align: left;
+        .hot-topics-img{
+            max-width: 25vw;
+            padding: 0 10px 0 0;
+        }
+        .ht-imgDiv{
+            max-width: fit-content;
+            text-align: center;
+        }
+        .hot-topics-div{
+            margin-bottom: 3vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            h3{
+                font-size: 7vw;
+            }
+            h6{
+                font-size: 5vw;
+            }
+            p{
+                font-size:  3.2vw;
+            }
+        }
+    }
+    .head{
+        margin-bottom: 0;
+        .container {
+            display: flex;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding: 0;
+            z-index: 3;
+            right: 30px;
+        }
+        
+        .bar1, .bar2, .bar3 {
+            display: inline-block;
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 2px 0;
+            transition: 0.4s;
+        }
+        
+        .change .bar1 {
+            transform: translate(0, -3px) rotate(-45deg);
+        }
+        
+        .change .bar2 {opacity: 0;}
+        
+        .change .bar3 {
+            transform: translate(0, 3px) rotate(45deg);
+        }
+    }
+
+    .show{
+        animation-name: menu-anim;
+        animation-delay: 0s;
+        animation-duration: .2s;
+        display: block;
+    }
+    @keyframes menu-anim {
+        0%{
+            transform: skewX(-30deg);
+            opacity: 0;
+        }
+        100%{
+            transform: skewX(0deg);
+            opacity: 1;
+            
+        }
+    }
+}
